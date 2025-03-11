@@ -62,26 +62,4 @@ function mediaqueries() {
   }
 }
 window.addEventListener("load", mediaqueries);
-window.addEventListener("resize", mediaqueries);
 
-// function gsapmediaqueries() {
-//   let mobile = window.matchMedia("(max-width:600px)");
-//   let tab = window.matchMedia("(max-width:740px)");
-//   if (mobile.matches) {
-//     gsap.to(".lastsection1 p", {
-//       transform: "translatex(80px)",
-//       duration: 2,
-//       repeat: -1,
-//       rotate: 360,
-//     });
-//   } else if(tab.matches){
-//     gsap.to(".lastsection1 p", {
-//       transform: "translatey(0px)",
-//       duration: 0,
-//       repeat: 0,
-//       rotate: 0,
-//     });
-//   }
-// }
-// window.addEventListener("load", gsapmediaqueries);
-// window.addEventListener("resize", gsapmediaqueries);

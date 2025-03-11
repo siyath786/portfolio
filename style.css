@@ -22,6 +22,7 @@ body {
   font-size: 2rem;
   font-family: "Mr dafoe";
   color: rgb(255, 255, 255);
+  margin-left: 10px;
 }
 nav {
   display: flex;
