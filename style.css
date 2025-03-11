@@ -194,6 +194,9 @@ nav {
   text-align: justify;
   width: 90%;
 }
+.skills{
+  margin-left: 20px;
+}
 .skills h2 {
   color: rgba(255, 255, 255, 0.931);
   font-size: 1.2rem;
