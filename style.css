@@ -1,0 +1,1262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+}
+/* nav styling for mobile */
+.maincontainer {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  background-color: transparent;
+  z-index: 11;
+  backdrop-filter: blur(60px);
+}
+.cont1 h1 {
+  font-size: 2rem;
+  font-family: "Mr dafoe";
+  color: rgb(255, 255, 255);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 96%;
+}
+
+.ultags {
+  height: 100vh;
+  width: 60%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform: translatex(750px);
+  transition: transform 0.8s ease;
+}
+.ultags li {
+  list-style: none;
+}
+.ultags a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: "poppins";
+}
+.ultags a:hover {
+  color: rgba(255, 255, 255, 0.562);
+}
+.ultoggle {
+  transform: translate(0px);
+}
+.cont2 {
+  height: 35px;
+  width: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 10;
+}
+.cont2 .arrow1 {
+  height: 4px;
+  width: 26px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  margin-top: 5px;
+  z-index: 11;
+}
+.cont2 .arrow2 {
+  height: 4px;
+  width: 18px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  margin-top: 4px;
+  z-index: 11;
+}
+.cont2 .arrow3 {
+  height: 4px;
+  width: 26px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  margin-top: 4px;
+  z-index: 11;
+}
+.arrow-1 {
+  transform: rotatez(45deg) translate(4px, 4px);
+  transition: transform 0.6s ease;
+}
+.arrow-2 {
+  display: none;
+}
+
+.arrow-3 {
+  transform: rotatez(-45deg) translate(1px, -1px);
+  transition: transform 0.6s ease;
+  z-index: 100;
+}
+
+/* hero section  */
+.videos {
+  object-fit: cover;
+  overflow: hidden;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0%;
+  z-index: 8;
+  filter: brightness(70%);
+}
+.videofootage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.textcont {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.textcont h1 {
+  font-size: 3.8rem;
+  color: white;
+  font-family: "poppins";
+  z-index: 9;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+.textcont h2 {
+  font-size: 1.5rem;
+  color: white;
+  font-family: "poppins";
+  z-index: 9;
+  letter-spacing: 0px;
+  padding-right: 6px;
+  animation-name: htwo;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+}
+@keyframes htwo {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* bottom section styling */
+
+.imgcont {
+  display: flex;
+  justify-content: center;
+}
+.imgcont img {
+  width: 40%;
+  border-radius: 50%;
+  filter: contrast(110%);
+}
+.biography {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.biography h2 {
+  color: white;
+  font-size: 1.4rem;
+  font-family: "oswald";
+  letter-spacing: 1px;
+}
+
+.biography p {
+  color: rgba(255, 255, 255, 0.893);
+  font-size: 0.9rem;
+  font-family: "poppins";
+  text-align: justify;
+  width: 90%;
+}
+.skills h2 {
+  color: rgba(255, 255, 255, 0.931);
+  font-size: 1.2rem;
+  font-family: "oswald";
+  letter-spacing: 1px;
+}
+.skills h3 {
+  color: white;
+  font-size: 1.1rem;
+  font-family: "poppins";
+}
+.skills p {
+  color: white;
+  font-size: 1rem;
+  font-family: "poppins";
+}
+.skills ul {
+  margin-top: 2px;
+}
+.skills ul li {
+  color: white;
+  font-size: 1rem;
+  font-family: "poppins";
+}
+.connect {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.connect h2 {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "oswald";
+  letter-spacing: 1px;
+}
+.connect div {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+.connect i:hover {
+  font-size: 1.6rem;
+  background: linear-gradient(to right, rgb(196, 22, 223), rgb(96, 0, 123));
+}
+
+.connect i {
+  color: white;
+  font-size: 1.3rem;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 50%;
+}
+.split {
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+}
+.split2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 95%;
+}
+.split2 h2 {
+  color: white;
+  font-size: 1rem;
+  font-family: "oswald";
+  letter-spacing: 1px;
+}
+.split2 p {
+  color: white;
+  font-size: 2rem;
+  font-family: "poppins";
+  letter-spacing: 1px;
+}
+.service {
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.service h2 {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "poppins";
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+.service h1 {
+  color: white;
+  font-size: 2.7rem;
+  font-family: "oswald";
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+.service span {
+  font-size: 2.9rem;
+  color: white;
+  font-family: "oswald";
+  letter-spacing: 1px;
+  background: linear-gradient(
+    to left,
+    rgb(153, 0, 255),
+    rgb(234, 0, 255),
+    rgb(153, 0, 255)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.mainservice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.small1,
+.small2,
+.small3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+  margin-left: 15px;
+  align-items: flex-start;
+}
+
+.design1,
+.design2,
+.design3 {
+  background-color: rgb(27, 27, 27);
+  border-bottom: 2px solid rgb(153, 0, 255);
+  height: 200px;
+  width: 94%;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.design1:hover {
+  background: linear-gradient(to right, rgb(39, 6, 52), rgb(29, 3, 47));
+}
+.design2:hover {
+  background: linear-gradient(to right, rgb(39, 6, 52), rgb(29, 3, 47));
+}
+.design3:hover {
+  background: linear-gradient(to right, rgb(39, 6, 52), rgb(29, 3, 47));
+}
+.design1 h3 {
+  color: white;
+  font-size: 1.7rem;
+  font-family: "oswald";
+}
+.design1,
+.design2,
+.design3 h2 {
+  color: white;
+  font-size: 1.6rem;
+  font-family: "poppins";
+}
+.design1,
+.design2,
+.design3 i {
+  font-size: 1.8rem;
+  margin-right: 8px;
+}
+.design1,
+.design2,
+.design3 p {
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  font-family: "poppins";
+  text-align: justify;
+}
+.design2 h3 {
+  color: white;
+  font-size: 1.7rem;
+  font-family: "oswald";
+}
+.design3 h3 {
+  color: white;
+  font-size: 1.7rem;
+  font-family: "oswald";
+}
+.mainservice {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.maindesign {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+}
+.logo {
+  display: flex;
+  gap: 10%;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 40%;
+}
+.logo :nth-child(3),
+:nth-child(4) {
+  display: none;
+}
+.recentmain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.recentworks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 50px;
+  height: 88vh;
+  width: 90%;
+  background-color: rgb(27, 27, 27);
+  border-radius: 30px;
+}
+
+.recent1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.recent1 h2 {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "poppins";
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+.recent1 h1 {
+  color: white;
+  font-size: 2.2rem;
+  font-family: "poppins";
+  margin-left: 5px;
+}
+.recent1 span {
+  font-size: 2.3rem;
+  color: white;
+  font-family: "poppins";
+  letter-spacing: 1px;
+  background: linear-gradient(
+    to left,
+    rgb(153, 0, 255),
+    rgb(234, 0, 255),
+    rgb(153, 0, 255)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.recent1 p {
+  color: white;
+  font-size: 0.9rem;
+  font-family: "poppins";
+  text-align: justify;
+  width: 90%;
+}
+.recent2 img {
+  width: 300px;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.recent2 h2 {
+  color: white;
+  font-size: 1.2rem;
+  font-family: "Poppins";
+  margin-top: 15px;
+}
+.recent2 span {
+  font-size: 1.2rem;
+  color: white;
+  background: linear-gradient(
+    to left,
+    rgb(153, 0, 255),
+    rgb(234, 0, 255),
+    rgb(153, 0, 255)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.recent2 h1 {
+  color: white;
+  font-size: 2rem;
+  font-family: "poppins";
+  letter-spacing: 1px;
+}
+
+.awards1 h2 {
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+.awards1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 5px;
+}
+.awards1 h1 {
+  color: white;
+  font-size: 2.8rem;
+  font-family: "oswald";
+  margin-left: 5px;
+}
+.awards1 span {
+  font-size: 3rem;
+  color: white;
+  font-family: "oswald";
+  letter-spacing: 1px;
+  background: linear-gradient(
+    to left,
+    rgb(153, 0, 255),
+    rgb(234, 0, 255),
+    rgb(153, 0, 255)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.designer0 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+.designer1,
+.designer2,
+.designer3 {
+  background-color: rgb(27, 27, 27);
+  height: 210px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  border-radius: 10px;
+  border-bottom: 2px solid rgb(153, 0, 255);
+}
+.designer1:hover {
+  background: linear-gradient(to right, rgb(39, 6, 52), rgb(29, 3, 47));
+}
+.designer2:hover {
+  background: linear-gradient(to right, rgb(39, 6, 52), rgb(29, 3, 47));
+}
+.designer3:hover {
+  background: linear-gradient(to right, rgb(39, 6, 52), rgb(29, 3, 47));
+}
+.designer1,
+.designer2,
+.designer3 h2 {
+  color: white;
+  font-size: 1.3rem;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+.designer1 h5 {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+.designer2 h5 {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+.designer3 h5 {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  font-family: "Poppins";
+  letter-spacing: 1px;
+  margin-left: 5px;
+}
+.designer1,
+.designer2,
+.designer3 p {
+  color: rgb(255, 255, 255);
+  font-size: 0.9rem;
+  font-family: "Poppins";
+  margin-left: 5px;
+}
+.designer1 div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 15px;
+  gap: 15px;
+}
+.designer2 div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 15px;
+  gap: 15px;
+}
+.designer3 div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 15px;
+  gap: 15px;
+}
+/* footer section styling */
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+  margin-left: 15px;
+}
+.contact :nth-child(1) {
+  color: rgba(255, 255, 255, 0.354);
+  font-family: "poppins";
+}
+.contact h2 {
+  color: rgb(255, 255, 255);
+  font-size: 1.3rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  letter-spacing: 1px;
+}
+.contact h1 {
+  color: white;
+  font-size: 2.5rem;
+  margin-left: 5px;
+  font-family: "oswald";
+  letter-spacing: 1px;
+}
+.contact span {
+  font-size: 2.7rem;
+  color: white;
+  font-family: "oswald";
+  letter-spacing: 1px;
+  background: linear-gradient(
+    to left,
+    rgb(153, 0, 255),
+    rgb(234, 0, 255),
+    rgb(153, 0, 255)
+  );
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.contact h4 {
+  color: white;
+  font-size: 1.3rem;
+}
+.contact :nth-child(5) {
+  margin-top: 20px;
+}
+.contact :nth-child(7) {
+  margin-top: 20px;
+}
+.contact :nth-child(6) {
+  margin-top: 5px;
+}
+.contact :nth-child(8) {
+  margin-top: 5px;
+}
+.inputsection {
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#inp1 {
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(27, 27, 27);
+  border: none;
+}
+#inp1:focus {
+  outline: none;
+  font-size: 1rem;
+  color: white;
+  border: 1.5px solid rgb(153, 0, 255);
+}
+#inp1::placeholder {
+  font-size: 1rem;
+}
+#inp2 {
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(27, 27, 27);
+  border: none;
+}
+#inp2:focus {
+  outline: none;
+  font-size: 1rem;
+  border: 1.5px solid rgb(153, 0, 255);
+  color: white;
+}
+#inp2::placeholder {
+  font-size: 1rem;
+}
+#inp3 {
+  width: 90%;
+  height: 180px;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(27, 27, 27);
+  border: none;
+}
+#inp3:focus {
+  outline: none;
+  font-size: 1.2rem;
+  border: 1.5px solid rgb(153, 0, 255);
+  color: white;
+}
+#inp3::placeholder {
+  font-size: 1rem;
+}
+.inputsection2 {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.inputsection2 i {
+  background-color: rgb(27, 27, 27);
+  border: 1px solid rgba(255, 255, 255, 0.243);
+  font-size: 1.8rem;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 50%;
+}
+.inputsection2 i:hover {
+  border: 2px solid rgb(153, 0, 255);
+}
+
+#inp4 {
+  font-family: "Poppins";
+  color: white;
+  border: none;
+  font-size: 1rem;
+  width: 200px;
+  height: 45px;
+  border-radius: 20px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.589);
+}
+#inp4:hover {
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(153, 0, 255);
+}
+.lastsection {
+  border-top: 1px solid rgba(255, 255, 255, 0.185);
+}
+.lastsection1 {
+  border-top: 1px solid rgba(255, 255, 255, 0.31);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lastsection1 p {
+  color: white;
+  font-size: 0.9rem;
+  margin-top: 15px;
+  font-family: "poppins";
+}
+
+/* --------------------------------------------------- */
+
+@media screen and (max-width: 390px) {
+  .recentworks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 50px;
+    height: 100vh;
+    width: 90%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 30px;
+  }
+}
+/* nav style for tablet  */
+@media screen and (min-width: 660px) {
+  .cont2 {
+    display: none;
+  }
+  .ultags {
+    background-color: transparent;
+    transform: translateX(0px);
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    position: static;
+    height: 100%;
+    width: 65%;
+  }
+  nav {
+    width: 85%;
+  }
+  .ultags a {
+    font-size: 1rem;
+    color: white;
+  }
+  /* bottom section styling */
+  .bottomcont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+  }
+  .biography {
+    align-items: center;
+    margin-left: 0px;
+  }
+  .biography p {
+    width: 70%;
+  }
+  .imgcont img {
+    width: 35%;
+  }
+  .split {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+  }
+  .split2 {
+    gap: 30px;
+  }
+  .split2 p {
+    font-size: 2.5rem;
+  }
+  .service h1 {
+    font-size: 2.9rem;
+  }
+  .service span {
+    font-size: 3.1rem;
+  }
+  .service {
+    margin-left: 30px;
+  }
+  .design1,
+  .design2,
+  .design3 {
+    width: 80%;
+  }
+  .logo img {
+    width: 32%;
+  }
+}
+/* nav styling for laptops */
+@media screen and (min-width: 746px) {
+  .cont2 {
+    display: none;
+  }
+  .ultags {
+    background-color: transparent;
+    transform: translateX(0px);
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    position: static;
+    height: 100%;
+    width: 65%;
+  }
+  nav {
+    width: 80%;
+  }
+  .ultags a {
+    font-size: 1rem;
+    color: white;
+  }
+  /* hero section styling  */
+  .textcont h1 {
+    font-size: 4rem;
+  }
+  .textcont h2 {
+    font-size: 1.8rem;
+  }
+  /* bottom section styling */
+  .imgcont img {
+    width: 30%;
+  }
+  .split0 {
+    display: flex;
+    justify-content: center;
+  }
+  .biography {
+    margin-left: 0px;
+  }
+  .biography p {
+    width: 50%;
+    text-align: initial;
+  }
+  .connect {
+    justify-content: flex-start;
+  }
+  .service h1 {
+    font-size: 3rem;
+  }
+  .service span {
+    font-size: 3.2rem;
+  }
+  .service {
+    margin-left: 50px;
+  }
+  .logo img {
+    width: 25%;
+  }
+  .logo :nth-child(3) {
+    display: block;
+  }
+  .recentworks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 50px;
+    height: 70vh;
+    width: 96%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 30px;
+  }
+  .recent1 h2 {
+    font-size: 1.5rem;
+  }
+  .recent1 h1 {
+    font-size: 3rem;
+  }
+  .recent1 span {
+    font-size: 3.1rem;
+  }
+  .recent1 p {
+    font-size: 1.1rem;
+    width: 80%;
+    text-align: justify;
+  }
+  .recent1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 6px;
+  }
+  .mainawards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .designer1,
+  .designer2,
+  .designer3 {
+    width: 70%;
+  }
+  .awards1 h2 {
+    color: white;
+    font-size: 1.4rem;
+    font-family: "Poppins";
+    letter-spacing: 1px;
+    margin-left: 5px;
+  }
+  .awards1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+  }
+  .awards1 h1 {
+    color: white;
+    font-size: 3.2rem;
+    font-family: "Poppins";
+  }
+  .awards1 span {
+    font-size: 3.4rem;
+  }
+  .designer0 {
+    margin-top: 0px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .inputsection {
+    width: 50%;
+    margin-top: 0px;
+  }
+  .contact h1 {
+    font-size: 3rem;
+  }
+  .contact span {
+    font-size: 3.2rem;
+  }
+  .inputsection2 {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+}
+
+/* nav styling for desktop */
+@media screen and (min-width: 990px) {
+  .cont2 {
+    display: none;
+  }
+  .ultags {
+    background-color: transparent;
+    transform: translateX(0px);
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    position: static;
+    height: 100%;
+    width: 60%;
+  }
+  .ultags :nth-child(4) {
+    display: none;
+  }
+  nav {
+    width: 65%;
+  }
+  .ultags a {
+    font-size: 1rem;
+    color: white;
+  }
+
+  /* hero section styling  */
+  .textcont h1 {
+    font-size: 5rem;
+  }
+  .textcont h2 {
+    font-size: 1.8rem;
+  }
+  /* bottom section styling */
+  .imgcont img {
+    width: 30%;
+  }
+  .bottommain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottomcont {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .biography {
+    align-items: flex-start;
+  }
+  .biography p {
+    width: 100%;
+    font-size: 1rem;
+    text-align: justify;
+  }
+  .split0 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    order: -1;
+  }
+  .split {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .connect {
+    margin-top: 25px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .split2 {
+    width: 80%;
+    height: 58vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+  .split2 h2 {
+    font-size: 1.1rem;
+  }
+  .split2 p {
+    font-size: 2.8rem;
+  }
+  .service {
+    margin-left: 50px;
+  }
+  .service h1 {
+    font-size: 4rem;
+  }
+  .service span {
+    font-size: 4.2rem;
+  }
+  .mainservice {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .design1,
+  .design2,
+  .design3 {
+    height: 200px;
+    width: 65%;
+  }
+  .design1 p {
+    width: 40%;
+  }
+  .design2 p {
+    width: 40%;
+  }
+  .design3 p {
+    width: 40%;
+  }
+  .small1,
+  .small2,
+  .small3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 15px;
+    align-items: center;
+  }
+  .logo img {
+    width: 15%;
+  }
+  .logo :nth-child(3),
+  :nth-child(4) {
+    display: block;
+  }
+  .recentworks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    height: 70vh;
+    width: 95%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 30px;
+  }
+  .recent1 h2 {
+    font-size: 1.5rem;
+  }
+  .recent1 h1 {
+    font-size: 3rem;
+  }
+  .recent1 span {
+    font-size: 3.1rem;
+  }
+  .recent1 p {
+    font-size: 1.1rem;
+    width: 90%;
+    text-align: justify;
+  }
+  .recent1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 6px;
+  }
+  .recent2 h2 {
+    margin-top: 20px;
+  }
+  .recent2 h1 {
+    margin-top: 8px;
+  }
+  .mainawards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .designer1,
+  .designer2,
+  .designer3 {
+    width: 60%;
+  }
+  .awards1 h2 {
+    color: white;
+    font-size: 1.4rem;
+    font-family: "Poppins";
+    letter-spacing: 1px;
+    margin-left: 5px;
+  }
+  .awards1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+  }
+  .awards1 h1 {
+    color: white;
+    font-size: 3.8rem;
+    font-family: "Poppins";
+  }
+  .awards1 span {
+    font-size: 4rem;
+  }
+  .designer0 {
+    margin-top: 0px;
+  }
+  .inputsection {
+    width: 55%;
+    margin-top: 0px;
+  }
+  .contact h1 {
+    font-size: 3.4rem;
+  }
+  .contact span {
+    font-size: 3.6rem;
+  }
+  .inputsection2 {
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 200px;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+}
