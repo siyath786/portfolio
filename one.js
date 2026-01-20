@@ -1,5 +1,6 @@
 let cont2 = document.querySelector(".cont2");
 let ultags = document.querySelector(".ultags");
+
 cont2.addEventListener("click", function () {
   ultags.classList.toggle("ultoggle");
   cont2.children[0].classList.toggle("arrow-1");
